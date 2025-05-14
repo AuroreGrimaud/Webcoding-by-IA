@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #f0f0f0;
+	height: auto;
+}
+header {
+	background-color: #fff;
+	padding: 2em 1em;
+	margin-bottom: 2em;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	width: 80%;
+	margin: 2em auto;
+	text-align: center;
+	height: auto;
+}
+
+header h1 {
+	font-size: 2em;
+	color: #333;
+	margin-bottom: 0.5em;
+}
+
+header p {
+	font-size: 1.2em;
+	color: #666;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	text-align: right;
+	padding: 1em 2em;
+	margin-top: 2em;
+	box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+	height: auto;
+}
+
+footer p {
+	font-size: 1em;
+	width: 91%;
+	
+}
+
+
+main {
+	width: 80%;
+	margin: 2em auto;
+	column-count: 4;
+	column-gap: 1em;
+	overflow: hidden;
+}
+
+section {
+	break-inside: avoid;
+	background: #fff;
+	padding: 1em;
+	margin-bottom: 1em;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+
+	transition: transform 0.2s;
+}
+
+section:hover {
+	transform: translateY(-10px);
+}
+
+section img {
+	width: 100%;
+	margin-bottom: 0.5em;
+	border-radius: 5px;
+}
+
+section h2 {
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+	color: #333;
+}
+
+section p {
+	font-size: 1em;
+	color: #666;
+}
+
+article {
+	top: 0;
+	width: 100%;
+	height: 300%;
+	background: rgba(56, 60, 67, .7);
+	position: absolute;
+	display: none;
+	z-index: 5;
+}
+
+aside {
+	position: fixed;
+	top: 2%;
+	left: 35%;
+	width: 30%;
+	height: auto;
+	background: #fff;
+	padding: 1em;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 15;
+	display: none;
+}
+
+
+#croix {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 30px;
+	height: 30px;
+	background: white;
+	color: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	font-weight: bold;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#grand {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+@media screen and (max-width: 550px) {
+  main {
+    width: 90%;
+    margin: 2em auto;
+	column-count: 1;
+	column-gap: 1em;
+  }
+  header {
+	width: 90%;
+	}
+}
+@media screen and (min-width: 550px) and (max-width: 750px) {
+  main {
+    width: 85%;
+    margin: 2em auto;
+	column-count: 2;
+	column-gap: 1em;
+  }
+  header {
+	width: 85%;
+	}
+}
+@media screen and (min-width: 750px) and (max-width: 1000px) { 
+  main {
+    width: 85%;
+    margin: 2em auto;
+	column-count: 3;
+	column-gap: 1em;
+  }
+  header {
+	width: 85%;
+	}
+}
